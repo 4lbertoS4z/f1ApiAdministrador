@@ -31,9 +31,10 @@ class DriversViewModel : ViewModel() {
                 if (response.isSuccessful) {
                     val drivers = response.body() ?: emptyList()
 
-                    // Asignar ID personalizado a cada piloto
+                    // Asignar IDs personalizados a cada piloto
                     val driversWithId = drivers.mapIndexed { index, driver ->
-                        driver.apply { id = (index + 1).toString() }
+                        driver.id = index.toString()
+                        driver
                     }
 
                     _drivers.value = driversWithId
