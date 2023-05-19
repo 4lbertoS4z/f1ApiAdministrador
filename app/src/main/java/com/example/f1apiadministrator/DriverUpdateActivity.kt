@@ -43,7 +43,7 @@ class DriverUpdateActivity : AppCompatActivity() {
 
     private fun updateDriver() {
         val updatedDriver = Driver(
-            id = binding.txtId.text.toString(),
+
             edad = binding.txtYear.text.toString().toInt(),
             escudería = binding.txtTeamName.text.toString(),
             image = binding.txtPhoto.text.toString(),

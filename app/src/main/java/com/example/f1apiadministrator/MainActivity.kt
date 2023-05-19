@@ -4,7 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.f1apiadministrator.databinding.ActivityMainBinding
-import com.example.f1apiadministrator.ui.DriverActivity
+import com.example.f1apiadministrator.ui.circuit.CircuitActivity
+import com.example.f1apiadministrator.ui.driver.DriverActivity
+import com.example.f1apiadministrator.ui.team.TeamActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -18,11 +20,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.buttonEquipos.setOnClickListener {
-            val intent = Intent(this,TeamUpdateActivity::class.java)
+            val intent = Intent(this, TeamActivity::class.java)
             startActivity(intent)
         }
         binding.buttonCircuitos.setOnClickListener {
-            val intent = Intent(this,CircuitUpdateActivity::class.java)
+            val intent = Intent(this, CircuitActivity::class.java)
             startActivity(intent)
         }
     }

@@ -34,12 +34,12 @@
                 android:id="@+id/nationalityImageView"
                 android:layout_width="20dp"
                 android:layout_height="15dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
-                app:layout_constraintTop_toBottomOf="@id/imageView"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
                 app:layout_constraintStart_toStartOf="@id/imageView"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
@@ -75,6 +75,7 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/yearTextView"
                 app:layout_constraintTop_toBottomOf="@id/yearTextView" />
+
             <TextView
                 android:id="@+id/winsTextView"
                 android:layout_width="wrap_content"
@@ -85,6 +86,7 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/equipTextView"
                 app:layout_constraintTop_toBottomOf="@id/equipTextView" />
+
             <TextView
                 android:id="@+id/podiumTextView"
                 android:layout_width="wrap_content"
@@ -95,6 +97,7 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/winsTextView"
                 app:layout_constraintTop_toBottomOf="@id/winsTextView" />
+
             <TextView
                 android:id="@+id/poleTextView"
                 android:layout_width="wrap_content"
@@ -105,16 +108,10 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="@id/podiumTextView"
                 app:layout_constraintTop_toBottomOf="@id/podiumTextView" />
-            <TextView
-                android:id="@+id/txtId"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ID:"
-                android:textColor="@android:color/black"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@id/txtId"
-                app:layout_constraintTop_toBottomOf="@id/txtId" />
+
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
